@@ -53,6 +53,7 @@ yellow_id = canvas.create_rectangle(10, 135, 30, 155, fill="yellow")
 pink_id = canvas.create_rectangle(10, 160, 30, 180, fill="pink")
 orange_id = canvas.create_rectangle(10, 185, 30, 205, fill="orange")
 cyan_id = canvas.create_rectangle(10, 210, 30, 230, fill="cyan")
+lime_id = canvas.create_rectangle(10, 235, 30, 255, fill="lime")
 
 def set_colour_red(event):
     global colour
@@ -90,6 +91,10 @@ def set_colour_cyan(event):
     global colour
     colour="cyan"
 
+def set_colour_lime(event):
+    global colour
+    colour="lime"
+
 canvas.tag_bind(red_id, "<Button-1>", set_colour_red)
 canvas.tag_bind(blue_id, "<Button-1>", set_colour_blue)
 canvas.tag_bind(green_id, "<Button-1>", set_colour_green)
@@ -99,5 +104,6 @@ canvas.tag_bind(orange_id, "<Button-1>", set_colour_orange)
 canvas.tag_bind(cyan_id, "<Button-1>", set_colour_cyan)
 canvas.tag_bind(black_id, "<Button-1>", set_colour_black)
 canvas.tag_bind(white_id, "<Button-1>", set_colour_white)  
+canvas.tag_bind(lime_id, "<Button-1>", set_colour_lime)
 
 window.mainloop()

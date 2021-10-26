@@ -1,5 +1,5 @@
 aliens = 2
-password = "ALIENS"
+password = aliens
 print("quickly! aliens are invading the planet.")
 print("hope you know the password for earths sake")
 print()
@@ -17,7 +17,7 @@ while guess != password:
     if aliens > 7400000000:
         break
     print()
-    print("password hint: the things that are attacking us")
+    print("password hint: the number of things that are attacking us")
     print()
     guess = input("quick! please enter the password: ").upper()
 

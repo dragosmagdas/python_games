@@ -1,5 +1,5 @@
 import random
-number = random.randint(1,20)
+number = random.randint(1,21)
 guess = int(input("I am thinking of a number from 1 to 20"))
 while guess != number:
     if guess < number:

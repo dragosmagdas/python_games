@@ -28,6 +28,8 @@ def create_bombfield(bombfield):
                 squaresToClear = squaresToClear + 1
         bombfield.append(rowList)
         #printfield(bombfield)
+
+
 def printfield(bombfield):
     for rowList in bombfield:
         print(rowList)

@@ -45,6 +45,12 @@ while runGame:
         if happy == 100:
             money = money + 40
             print("you now have {money}$ money".format(money=money))
+        if happy == 200:
+            money = money + 50
+            print("you now have {money}$ money".format(money=money))
+        if happy == 300:
+            money = money + 60
+            print("you now have {money}$ money".format(money=money)) 
     elif action == "exit":
         print("bye bye")
         runGame = False
